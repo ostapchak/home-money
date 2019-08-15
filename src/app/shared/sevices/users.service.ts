@@ -9,6 +9,7 @@ export class UsersService {
 
     getUserByEmail(email: string): Observable<User> {
         return this.http.get<User>(`http://localhost:3000/users?email=${email}`)
+            .map((user: User) => user[0] ? user[0] : undefined)
         
     }
 }
