@@ -1,48 +1,95 @@
-<p class="text-xs-center">Регистрация для получения доступа</p>
-<form>
-    <div class="form-group">
+<p class="text-xs-center">Реєстрація для отримання доступу</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div 
+        class="form-group"
+        [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}"
+    >
         <label for="email">Email</label>
         <input
             type="text"
             class="form-control underlined"
             id="email"
-            placeholder="Введите email"
+            placeholder="Введіть email"
+            formControlName="email"
         >
+        <span 
+            class="form-help-text"
+            *ngIf="form.get('email').invalid && form.get('email').touched"
+        >
+            <span *ngIf="form.get('email')['errors']['required']">Email не може бути пустим!</span>
+            <span *ngIf="form.get('email')['errors']['email']">Введіть коректний Email!</span>
+        </span>
     </div>
-    <div class="form-group has-error">
+    <div 
+        class="form-group"
+        [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}"    
+    >
         <label for="password">Пароль</label>
         <input
             type="password"
             class="form-control underlined"
             id="password"
-            placeholder="Введите пароль"
+            placeholder="Введіть пароль"
+            formControlName="password"
         >
-        <span class="form-help-text">Error message.</span>
+        <span 
+            class="form-help-text"
+            *ngIf="form.get('password').invalid && form.get('password').touched"
+        >
+            <span *ngIf="form.get('password')['errors']['required']">Пароль не може бути пустим!</span>
+            <span *ngIf="form.get('password')['errors']['minlength'] && form.get('password')['errors']['minlength']['requiredLength']">
+                Пароль повинен містити не менше ніж {{form.get('password')['errors']['minlength']['requiredLength']}} символів. 
+                Зараз {{form.get('password')['errors']['minlength']['actualLength']}}!</span>
+        </span>
     </div>
-    <div class="form-group has-success">
-        <label for="name">Имя</label>
+    <div 
+        class="form-group"
+        [ngClass]="{'has-error': form.get('name').invalid && form.get('name').touched}"
+    >
+        <label for="name">Ім'я</label>
         <input
             type="text"
             class="form-control underlined"
             id="name"
-            placeholder="Введите имя"
+            placeholder="Введіть ім'я"
+            formControlName="name"
         >
-        <span class="form-help-text">Success message.</span>
+        <span 
+            class="form-help-text"
+            *ngIf="form.get('name').invalid && form.get('name').touched"
+        >
+           Ім'я не може бути пустим!
+        </span>
     </div>
-    <div class="form-group">
+    <div 
+        class="form-group"
+        [ngClass]="{'has-error': form.get('agree').invalid && form.get('agree').touched}"
+    >
         <label for="agree">
-            <input class="checkbox" id="agree" type="checkbox">
-            <span>Согласен с правилами</span>
+            <input
+                class="checkbox"
+                id="agree" 
+                type="checkbox"
+                formControlName="agree"
+                >
+                
+            <span>Погодитись з правилами.</span>
         </label>
     </div>
     <div class="form-group">
-        <button type="submit" class="btn btn-block btn-primary">Зарегистрироваться</button>
+        <button 
+            type="submit" 
+            class="btn btn-block btn-primary"
+            [disabled]="form.invalid"
+        >
+             Зареєструватися
+        </button>
     </div>
     <div class="form-group">
         <p class="text-muted text-xs-center">
-            Уже есть аккаунт?
-            <a href="#">
-                Войти!
+            Вже є акаунт?
+            <a [routerLink]="'/login'">
+                Увійти!
             </a>
         </p>
     </div>
