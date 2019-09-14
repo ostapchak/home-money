@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 1,
-      "email": "wfm@mail.ru",
+      "email": "rom@i.ua",
       "password": "12345678",
-      "name": "Администратор"
+      "name": "Admin"
     }
   ],
   "bill": {
