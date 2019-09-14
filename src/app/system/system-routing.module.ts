@@ -11,7 +11,7 @@ const routes: Routes = [
      {path: 'system', component: SystemComponent, children: [
           {path: 'bill', component: BillPageComponent},
           {path: 'history', component: HistoryPageComponent},
-          {path: 'planing', component: PlanningPageComponent},
+          {path: 'planning', component: PlanningPageComponent},
           {path: 'records', component: RecordsPageComponent}
      ]}
 ]
