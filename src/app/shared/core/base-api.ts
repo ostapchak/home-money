@@ -13,15 +13,15 @@ export class BaseApi {
      }
 
      public get(url: string = ''): Observable<any> {
-          return this.http.get(this.getUrl(url))
+          return this.http.get(this.getUrl(url));
      }
 
      public post(url: string = '', data): Observable<any> {
-          return this.http.post(this.getUrl(url), data)
+          return this.http.post(this.getUrl(url), data);
      }
 
      public put(url: string = '', data: any = {}): Observable<any> {
-          return this.http.put(this.getUrl(url), data)
+          return this.http.put(this.getUrl(url), data);
      }
 
 }
