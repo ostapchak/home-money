@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 
-import { BillService } from '../shared/components/services/bill.service';
+import { BillService } from '../shared/services/bill.service';
 import { Bill } from '../shared/models/bill.model';
 
 

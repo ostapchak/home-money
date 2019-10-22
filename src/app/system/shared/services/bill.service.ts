@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-import { Bill } from '../../models/bill.model';
+import { Bill } from '../models/bill.model';
 import { BaseApi } from 'src/app/shared/core/base-api';
+
+
 
 @Injectable()
 export class BillService extends BaseApi{
