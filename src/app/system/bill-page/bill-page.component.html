@@ -14,6 +14,6 @@
   </div>
   <div class="row" *ngIf="isLoaded">
      <home-bill-card [bill]="bill" [currency]="currency"></home-bill-card>
-     <home-currency-card></home-currency-card>  
+     <home-currency-card [currency]="currency"></home-currency-card>  
   </div>
 </section>
