@@ -26,6 +26,16 @@
       "id": 3,
       "name": "Машина",
       "capacity": 7000
+    },
+    {
+      "name": "new",
+      "capacity": 20000,
+      "id": 4
+    },
+    {
+      "name": "new2",
+      "capacity": 420000,
+      "id": 5
     }
   ],
   "events": [

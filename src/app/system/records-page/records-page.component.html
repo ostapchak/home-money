@@ -10,7 +10,7 @@
           <home-add-event></home-add-event>
       </div>
       <div class="col-md-6">
-         <home-add-category></home-add-category>
+         <home-add-category (onCategoryAdd)="newCategoryAdded($event)"></home-add-category>
       </div>
   </div>
   <div class="row">
