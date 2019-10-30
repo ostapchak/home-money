@@ -3,8 +3,10 @@
       Сторінка записів <span class="sparkline bar"></span>
   </h3>
 </div>
-
-<section class="section">
+<section class="section text-center" *ngIf="!isLoaded">
+    Loading ...
+</section>
+<section class="section" *ngIf="isLoaded">
   <div class="row">
       <div class="col-md-6">
           <home-add-event></home-add-event>
@@ -15,7 +17,10 @@
   </div>
   <div class="row">
       <div class="col-md-6">
-          <home-edit-category></home-edit-category>
+          <home-edit-category 
+            [categories]="categories"
+            (onCategoryEdit)="categoryWasEdited($event)"
+          ></home-edit-category>
       </div>
   </div>
 </section>

@@ -13,8 +13,8 @@
   },
   "categories": [
     {
-      "name": "Дом",
-      "capacity": 15000,
+      "name": "Дом1",
+      "capacity": 45456,
       "id": 1
     },
     {
@@ -36,6 +36,11 @@
       "name": "new2",
       "capacity": 420000,
       "id": 5
+    },
+    {
+      "name": "new 3",
+      "capacity": 12,
+      "id": 6
     }
   ],
   "events": [
