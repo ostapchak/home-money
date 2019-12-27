@@ -9,7 +9,7 @@
 <section class="section" *ngIf="isLoaded">
   <div class="row">
       <div class="col-md-6">
-          <home-add-event></home-add-event>
+          <home-add-event  [categories]="categories"></home-add-event>
       </div>
       <div class="col-md-6">
          <home-add-category (onCategoryAdd)="newCategoryAdded($event)"></home-add-category>
