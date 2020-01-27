@@ -9,12 +9,12 @@
   ],
   "bill": {
     "value": 100000,
-    "currency": "RUB"
+    "currency": "EUR"
   },
   "categories": [
     {
-      "name": "Дом1",
-      "capacity": 45456,
+      "name": "Дім",
+      "capacity": 111111111,
       "id": 1
     },
     {
@@ -33,7 +33,7 @@
       "id": 4
     },
     {
-      "name": "new2",
+      "name": "new21",
       "capacity": 420000,
       "id": 5
     },
@@ -41,6 +41,11 @@
       "name": "new 3",
       "capacity": 12,
       "id": 6
+    },
+    {
+      "name": "впвапвап",
+      "capacity": 145,
+      "id": 7
     }
   ],
   "events": [
@@ -83,6 +88,22 @@
       "date": "10.06.2017 14:01:58",
       "id": 5,
       "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "income",
+      "amount": 1200,
+      "category": 4,
+      "date": "27.01.2020 21:34:56",
+      "description": "test",
+      "id": 6
+    },
+    {
+      "type": "income",
+      "amount": 102000,
+      "category": 1,
+      "date": "27.01.2020 21:51:33",
+      "description": "1",
+      "id": 7
     }
   ]
 }
