@@ -8,13 +8,13 @@
     }
   ],
   "bill": {
-    "value": 100000,
+    "value": 93875,
     "currency": "EUR"
   },
   "categories": [
     {
       "name": "Дім",
-      "capacity": 111111111,
+      "capacity": 100000,
       "id": 1
     },
     {
@@ -104,6 +104,38 @@
       "date": "27.01.2020 21:51:33",
       "description": "1",
       "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 2000,
+      "category": 3,
+      "date": "06.02.2020 17:20:10",
+      "description": "123",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 3000,
+      "category": 3,
+      "date": "06.02.2020 17:21:07",
+      "description": "test",
+      "id": 9
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 1,
+      "date": "06.02.2020 17:27:58",
+      "description": "t",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 125,
+      "category": 6,
+      "date": "06.02.2020 17:28:27",
+      "description": "fghfgh",
+      "id": 11
     }
   ]
 }

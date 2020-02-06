@@ -6,12 +6,16 @@ import { BaseApi } from 'src/app/shared/core/base-api';
 import { HOMEEvent } from '../models/event.model';
 
 @Injectable()
-export class EventService extends BaseApi {
+export class EventsService extends BaseApi {
    constructor(public http: HttpClient) {
       super(http);
    }
 
    addEvent(event: HOMEEvent): Observable<HOMEEvent> {
       return this.post('events', event)
+   }
+
+   getEvents(): Observable<HOMEEvent[]> {
+      return this.get('events');
    }
 }

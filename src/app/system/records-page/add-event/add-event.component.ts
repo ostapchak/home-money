@@ -4,7 +4,7 @@ import * as moment from 'moment';
 
 import { Category } from '../../shared/models/category.model';
 import { HOMEEvent } from '../../shared/models/event.model';
-import { EventService } from '../../shared/services/events.service';
+import { EventsService } from '../../shared/services/events.service';
 import { BillService } from '../../shared/services/bill.service';
 import { Bill } from '../../shared/models/bill.model';
 import { Message } from 'src/app/shared/models/message.model';
@@ -28,7 +28,7 @@ export class AddEventComponent implements OnInit, OnDestroy {
 
   message: Message;
 
-  constructor(private eventsService: EventService,
+  constructor(private eventsService: EventsService,
               private billService: BillService) { }
 
   ngOnInit() {
