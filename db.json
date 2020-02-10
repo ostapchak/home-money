@@ -8,13 +8,13 @@
     }
   ],
   "bill": {
-    "value": 93875,
+    "value": 59341,
     "currency": "EUR"
   },
   "categories": [
     {
       "name": "Дім",
-      "capacity": 100000,
+      "capacity": 1000,
       "id": 1
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "name": "new",
-      "capacity": 20000,
+      "capacity": 200000,
       "id": 4
     },
     {
@@ -136,6 +136,14 @@
       "date": "06.02.2020 17:28:27",
       "description": "fghfgh",
       "id": 11
+    },
+    {
+      "type": "outcome",
+      "amount": 34534,
+      "category": 5,
+      "date": "11.02.2020 00:04:33",
+      "description": "fdfgdfg",
+      "id": 12
     }
   ]
 }

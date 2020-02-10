@@ -5,8 +5,11 @@
     </h3>
 </div>
 
-<home-history-chart></home-history-chart>
+<div *ngIf="!isLoaded" class="text-center">Loading....</div>
+<div *ngIf="isLoaded">
+<home-history-chart [data]="chartData"></home-history-chart>
 
 <home-history-events></home-history-events>
 
-<home-history-filter></home-history-filter>
+<home-history-filter></home-history-filter>    
+</div>
