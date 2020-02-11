@@ -9,7 +9,13 @@
 <div *ngIf="isLoaded">
 <home-history-chart [data]="chartData"></home-history-chart>
 
-<home-history-events></home-history-events>
+<home-history-events
+    [categories]="categories"
+    [events]="events"
+></home-history-events
+    
+
+>
 
 <home-history-filter></home-history-filter>    
 </div>

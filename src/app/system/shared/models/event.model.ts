@@ -6,5 +6,6 @@ export class HOMEEvent  {
      public date: string,
      public description: string,
      public id?: string, 
+     public catName?: string
    ) {}
 }
