@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 59341,
+    "value": 60541,
     "currency": "EUR"
   },
   "categories": [
@@ -144,6 +144,14 @@
       "date": "11.02.2020 00:04:33",
       "description": "fdfgdfg",
       "id": 12
+    },
+    {
+      "type": "income",
+      "amount": 1200,
+      "category": 1,
+      "date": "20.02.2020 14:13:49",
+      "description": "test",
+      "id": 13
     }
   ]
 }
