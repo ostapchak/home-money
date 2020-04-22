@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 60541,
+    "value": 60241,
     "currency": "EUR"
   },
   "categories": [
@@ -28,8 +28,8 @@
       "capacity": 7000
     },
     {
-      "name": "new",
-      "capacity": 200000,
+      "name": "Одяг",
+      "capacity": 20000,
       "id": 4
     },
     {
@@ -152,6 +152,14 @@
       "date": "20.02.2020 14:13:49",
       "description": "test",
       "id": 13
+    },
+    {
+      "type": "outcome",
+      "amount": 300,
+      "category": 4,
+      "date": "22.04.2020 17:48:18",
+      "description": "Джинси",
+      "id": 14
     }
   ]
 }
