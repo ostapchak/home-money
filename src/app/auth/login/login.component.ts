@@ -34,7 +34,11 @@ export class LoginComponent implements OnInit {
           this.showMessage({
             text: 'Ви успішно зареєструвалися! Увійдіть в систему.',
             type: 'success'});
-        }
+        } else if(params['accessDenied']) {
+            this.showMessage({
+              text: 'Для роботи з системою Вам потрібно авторизуватися!',
+              type: 'warning'});
+          }
       });
 
     this.form = new FormGroup({
