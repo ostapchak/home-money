@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { UsersService } from 'src/app/shared/sevices/users.service';
 import { User } from 'src/app/shared/models/user.model';
@@ -24,8 +25,16 @@ export class LoginComponent implements OnInit {
     private usersService: UsersService,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private route: ActivatedRoute,
+    private title: Title,
+    private meta: Meta
+  ) { 
+    title.setTitle('Вхід в систему');
+    meta.addTags([
+      {name: 'keywords', content: 'логін, вхід, система'},
+      {name: 'description', content: 'Сторінка для входу в систему'}
+    ]);
+  }
 
   ngOnInit() {
     this.message = new Message('danger', '');
