@@ -6,12 +6,14 @@ import { UsersService } from 'src/app/shared/sevices/users.service';
 import { User } from 'src/app/shared/models/user.model';
 import { Message } from 'src/app/shared/models/message.model';
 import { AuthService } from 'src/app/shared/sevices/auth.service';
+import { fadeStateTrigger } from 'src/app/shared/animations/fade.animation';
 
 
 @Component({
   selector: 'home-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  animations: [fadeStateTrigger]
 })
 export class LoginComponent implements OnInit {
 
